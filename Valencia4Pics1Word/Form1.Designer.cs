@@ -51,12 +51,12 @@ namespace Valencia4Pics1Word
             this.L = new System.Windows.Forms.Button();
             this.E = new System.Windows.Forms.Button();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.Letter1 = new System.Windows.Forms.Button();
-            this.Letter2 = new System.Windows.Forms.Button();
-            this.Letter3 = new System.Windows.Forms.Button();
-            this.Letter4 = new System.Windows.Forms.Button();
-            this.Letter5 = new System.Windows.Forms.Button();
-            this.Letter6 = new System.Windows.Forms.Button();
+            this.Letter1 = new System.Windows.Forms.Label();
+            this.Letter2 = new System.Windows.Forms.Label();
+            this.Letter3 = new System.Windows.Forms.Label();
+            this.Letter4 = new System.Windows.Forms.Label();
+            this.Letter5 = new System.Windows.Forms.Label();
+            this.Letter6 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -198,6 +198,7 @@ namespace Valencia4Pics1Word
             this.I.TabIndex = 1;
             this.I.Text = "I";
             this.I.UseVisualStyleBackColor = true;
+            this.I.Click += new System.EventHandler(this.I_Click);
             // 
             // P
             // 
@@ -209,6 +210,7 @@ namespace Valencia4Pics1Word
             this.P.TabIndex = 2;
             this.P.Text = "P";
             this.P.UseVisualStyleBackColor = true;
+            this.P.Click += new System.EventHandler(this.P_Click);
             // 
             // W
             // 
@@ -220,6 +222,7 @@ namespace Valencia4Pics1Word
             this.W.TabIndex = 3;
             this.W.Text = "W";
             this.W.UseVisualStyleBackColor = true;
+            this.W.Click += new System.EventHandler(this.W_Click);
             // 
             // T
             // 
@@ -231,6 +234,7 @@ namespace Valencia4Pics1Word
             this.T.TabIndex = 4;
             this.T.Text = "T";
             this.T.UseVisualStyleBackColor = true;
+            this.T.Click += new System.EventHandler(this.T_Click);
             // 
             // H
             // 
@@ -242,6 +246,7 @@ namespace Valencia4Pics1Word
             this.H.TabIndex = 5;
             this.H.Text = "H";
             this.H.UseVisualStyleBackColor = true;
+            this.H.Click += new System.EventHandler(this.H_Click);
             // 
             // C
             // 
@@ -253,6 +258,7 @@ namespace Valencia4Pics1Word
             this.C.TabIndex = 6;
             this.C.Text = "C";
             this.C.UseVisualStyleBackColor = true;
+            this.C.Click += new System.EventHandler(this.C_Click);
             // 
             // S
             // 
@@ -264,6 +270,7 @@ namespace Valencia4Pics1Word
             this.S.TabIndex = 7;
             this.S.Text = "S";
             this.S.UseVisualStyleBackColor = true;
+            this.S.Click += new System.EventHandler(this.S_Click);
             // 
             // L
             // 
@@ -275,6 +282,7 @@ namespace Valencia4Pics1Word
             this.L.TabIndex = 8;
             this.L.Text = "L";
             this.L.UseVisualStyleBackColor = true;
+            this.L.Click += new System.EventHandler(this.L_Click);
             // 
             // E
             // 
@@ -286,6 +294,7 @@ namespace Valencia4Pics1Word
             this.E.TabIndex = 9;
             this.E.Text = "E";
             this.E.UseVisualStyleBackColor = true;
+            this.E.Click += new System.EventHandler(this.E_Click);
             // 
             // flowLayoutPanel3
             // 
@@ -295,89 +304,95 @@ namespace Valencia4Pics1Word
             this.flowLayoutPanel3.Controls.Add(this.Letter4);
             this.flowLayoutPanel3.Controls.Add(this.Letter5);
             this.flowLayoutPanel3.Controls.Add(this.Letter6);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(19, 424);
+            this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(41, 429);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(373, 61);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(370, 53);
             this.flowLayoutPanel3.TabIndex = 5;
             // 
             // Letter1
             // 
+            this.Letter1.AutoSize = true;
             this.Letter1.BackColor = System.Drawing.Color.Black;
-            this.Letter1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Letter1.Enabled = false;
-            this.Letter1.Font = new System.Drawing.Font("Now", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Letter1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Letter1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Letter1.Font = new System.Drawing.Font("Now", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Letter1.ForeColor = System.Drawing.Color.White;
-            this.Letter1.Location = new System.Drawing.Point(3, 3);
+            this.Letter1.Location = new System.Drawing.Point(3, 0);
             this.Letter1.Name = "Letter1";
-            this.Letter1.Size = new System.Drawing.Size(55, 55);
+            this.Letter1.Size = new System.Drawing.Size(44, 46);
             this.Letter1.TabIndex = 0;
-            this.Letter1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Letter1.UseVisualStyleBackColor = false;
+            this.Letter1.Text = "  ";
             // 
             // Letter2
             // 
+            this.Letter2.AutoSize = true;
             this.Letter2.BackColor = System.Drawing.Color.Black;
-            this.Letter2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Letter2.Enabled = false;
-            this.Letter2.Font = new System.Drawing.Font("Now", 24F, System.Drawing.FontStyle.Bold);
-            this.Letter2.Location = new System.Drawing.Point(64, 3);
+            this.Letter2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Letter2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Letter2.Font = new System.Drawing.Font("Now", 27.75F, System.Drawing.FontStyle.Bold);
+            this.Letter2.ForeColor = System.Drawing.Color.White;
+            this.Letter2.Location = new System.Drawing.Point(53, 0);
             this.Letter2.Name = "Letter2";
-            this.Letter2.Size = new System.Drawing.Size(55, 55);
+            this.Letter2.Size = new System.Drawing.Size(44, 46);
             this.Letter2.TabIndex = 1;
-            this.Letter2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Letter2.UseVisualStyleBackColor = false;
+            this.Letter2.Text = "  ";
             // 
             // Letter3
             // 
+            this.Letter3.AutoSize = true;
             this.Letter3.BackColor = System.Drawing.Color.Black;
-            this.Letter3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Letter3.Enabled = false;
-            this.Letter3.Font = new System.Drawing.Font("Now", 24F, System.Drawing.FontStyle.Bold);
-            this.Letter3.Location = new System.Drawing.Point(125, 3);
+            this.Letter3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Letter3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Letter3.Font = new System.Drawing.Font("Now", 27.75F, System.Drawing.FontStyle.Bold);
+            this.Letter3.ForeColor = System.Drawing.Color.White;
+            this.Letter3.Location = new System.Drawing.Point(103, 0);
             this.Letter3.Name = "Letter3";
-            this.Letter3.Size = new System.Drawing.Size(55, 55);
+            this.Letter3.Size = new System.Drawing.Size(44, 46);
             this.Letter3.TabIndex = 2;
-            this.Letter3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Letter3.UseVisualStyleBackColor = false;
+            this.Letter3.Text = "  ";
             // 
             // Letter4
             // 
+            this.Letter4.AutoSize = true;
             this.Letter4.BackColor = System.Drawing.Color.Black;
-            this.Letter4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Letter4.Enabled = false;
-            this.Letter4.Font = new System.Drawing.Font("Now", 24F, System.Drawing.FontStyle.Bold);
-            this.Letter4.Location = new System.Drawing.Point(186, 3);
+            this.Letter4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Letter4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Letter4.Font = new System.Drawing.Font("Now", 27.75F, System.Drawing.FontStyle.Bold);
+            this.Letter4.ForeColor = System.Drawing.Color.White;
+            this.Letter4.Location = new System.Drawing.Point(153, 0);
             this.Letter4.Name = "Letter4";
-            this.Letter4.Size = new System.Drawing.Size(55, 55);
+            this.Letter4.Size = new System.Drawing.Size(44, 46);
             this.Letter4.TabIndex = 3;
-            this.Letter4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Letter4.UseVisualStyleBackColor = false;
+            this.Letter4.Text = "  ";
             // 
             // Letter5
             // 
+            this.Letter5.AutoSize = true;
             this.Letter5.BackColor = System.Drawing.Color.Black;
-            this.Letter5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Letter5.Enabled = false;
-            this.Letter5.Font = new System.Drawing.Font("Now", 24F, System.Drawing.FontStyle.Bold);
-            this.Letter5.Location = new System.Drawing.Point(247, 3);
+            this.Letter5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Letter5.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Letter5.Font = new System.Drawing.Font("Now", 27.75F, System.Drawing.FontStyle.Bold);
+            this.Letter5.ForeColor = System.Drawing.Color.White;
+            this.Letter5.Location = new System.Drawing.Point(203, 0);
             this.Letter5.Name = "Letter5";
-            this.Letter5.Size = new System.Drawing.Size(55, 55);
+            this.Letter5.Size = new System.Drawing.Size(44, 46);
             this.Letter5.TabIndex = 4;
-            this.Letter5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Letter5.UseVisualStyleBackColor = false;
+            this.Letter5.Text = "  ";
             // 
             // Letter6
             // 
+            this.Letter6.AutoSize = true;
             this.Letter6.BackColor = System.Drawing.Color.Black;
-            this.Letter6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Letter6.Enabled = false;
-            this.Letter6.Font = new System.Drawing.Font("Now", 24F, System.Drawing.FontStyle.Bold);
-            this.Letter6.Location = new System.Drawing.Point(308, 3);
+            this.Letter6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Letter6.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Letter6.Font = new System.Drawing.Font("Now", 27.75F, System.Drawing.FontStyle.Bold);
+            this.Letter6.ForeColor = System.Drawing.Color.White;
+            this.Letter6.Location = new System.Drawing.Point(253, 0);
             this.Letter6.Name = "Letter6";
-            this.Letter6.Size = new System.Drawing.Size(55, 55);
+            this.Letter6.Size = new System.Drawing.Size(44, 46);
             this.Letter6.TabIndex = 5;
-            this.Letter6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Letter6.UseVisualStyleBackColor = false;
+            this.Letter6.Text = "  ";
             // 
             // Form1
             // 
@@ -402,6 +417,7 @@ namespace Valencia4Pics1Word
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -429,12 +445,12 @@ namespace Valencia4Pics1Word
         private System.Windows.Forms.Button L;
         private System.Windows.Forms.Button E;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private System.Windows.Forms.Button Letter1;
-        private System.Windows.Forms.Button Letter2;
-        private System.Windows.Forms.Button Letter3;
-        private System.Windows.Forms.Button Letter4;
-        private System.Windows.Forms.Button Letter5;
-        private System.Windows.Forms.Button Letter6;
+        private System.Windows.Forms.Label Letter1;
+        private System.Windows.Forms.Label Letter2;
+        private System.Windows.Forms.Label Letter3;
+        private System.Windows.Forms.Label Letter4;
+        private System.Windows.Forms.Label Letter5;
+        private System.Windows.Forms.Label Letter6;
     }
 }
 
