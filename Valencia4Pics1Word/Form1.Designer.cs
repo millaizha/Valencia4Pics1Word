@@ -186,6 +186,7 @@ namespace Valencia4Pics1Word
             this.A.Text = "A";
             this.A.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.A.UseVisualStyleBackColor = true;
+            this.A.Click += new System.EventHandler(this.A_Click);
             // 
             // I
             // 
@@ -302,6 +303,10 @@ namespace Valencia4Pics1Word
             // Letter1
             // 
             this.Letter1.BackColor = System.Drawing.Color.Black;
+            this.Letter1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Letter1.Enabled = false;
+            this.Letter1.Font = new System.Drawing.Font("Now", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Letter1.ForeColor = System.Drawing.Color.White;
             this.Letter1.Location = new System.Drawing.Point(3, 3);
             this.Letter1.Name = "Letter1";
             this.Letter1.Size = new System.Drawing.Size(55, 55);
@@ -312,6 +317,9 @@ namespace Valencia4Pics1Word
             // Letter2
             // 
             this.Letter2.BackColor = System.Drawing.Color.Black;
+            this.Letter2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Letter2.Enabled = false;
+            this.Letter2.Font = new System.Drawing.Font("Now", 24F, System.Drawing.FontStyle.Bold);
             this.Letter2.Location = new System.Drawing.Point(64, 3);
             this.Letter2.Name = "Letter2";
             this.Letter2.Size = new System.Drawing.Size(55, 55);
@@ -322,6 +330,9 @@ namespace Valencia4Pics1Word
             // Letter3
             // 
             this.Letter3.BackColor = System.Drawing.Color.Black;
+            this.Letter3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Letter3.Enabled = false;
+            this.Letter3.Font = new System.Drawing.Font("Now", 24F, System.Drawing.FontStyle.Bold);
             this.Letter3.Location = new System.Drawing.Point(125, 3);
             this.Letter3.Name = "Letter3";
             this.Letter3.Size = new System.Drawing.Size(55, 55);
@@ -332,6 +343,9 @@ namespace Valencia4Pics1Word
             // Letter4
             // 
             this.Letter4.BackColor = System.Drawing.Color.Black;
+            this.Letter4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Letter4.Enabled = false;
+            this.Letter4.Font = new System.Drawing.Font("Now", 24F, System.Drawing.FontStyle.Bold);
             this.Letter4.Location = new System.Drawing.Point(186, 3);
             this.Letter4.Name = "Letter4";
             this.Letter4.Size = new System.Drawing.Size(55, 55);
@@ -342,6 +356,9 @@ namespace Valencia4Pics1Word
             // Letter5
             // 
             this.Letter5.BackColor = System.Drawing.Color.Black;
+            this.Letter5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Letter5.Enabled = false;
+            this.Letter5.Font = new System.Drawing.Font("Now", 24F, System.Drawing.FontStyle.Bold);
             this.Letter5.Location = new System.Drawing.Point(247, 3);
             this.Letter5.Name = "Letter5";
             this.Letter5.Size = new System.Drawing.Size(55, 55);
@@ -352,6 +369,9 @@ namespace Valencia4Pics1Word
             // Letter6
             // 
             this.Letter6.BackColor = System.Drawing.Color.Black;
+            this.Letter6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Letter6.Enabled = false;
+            this.Letter6.Font = new System.Drawing.Font("Now", 24F, System.Drawing.FontStyle.Bold);
             this.Letter6.Location = new System.Drawing.Point(308, 3);
             this.Letter6.Name = "Letter6";
             this.Letter6.Size = new System.Drawing.Size(55, 55);

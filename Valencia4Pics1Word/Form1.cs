@@ -16,5 +16,13 @@ namespace Valencia4Pics1Word
         {
             InitializeComponent();
         }
+
+        private void A_Click(object sender, EventArgs e)
+        {
+            if (Letter1.Text == "")
+            {
+                Letter1.Text = "A";
+            }
+        }
     }
 }
