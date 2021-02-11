@@ -413,7 +413,9 @@ namespace Valencia4Pics1Word
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.flowLayoutPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "4 Pics 1 Word by Valencia SD11B";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

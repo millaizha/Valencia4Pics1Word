@@ -56,7 +56,7 @@ namespace Valencia4Pics1Word
             {
                 LetterLabel(Letter6, letter, button);
             }
-
+            AnswerCorrect();
         }
 
         public void DefaultLetter(Label label, Button button)
@@ -65,6 +65,24 @@ namespace Valencia4Pics1Word
             button.Enabled = true;
             button.BackColor = Color.Gainsboro;
             label.Cursor = System.Windows.Forms.Cursors.Default;
+        }
+
+        public void AnswerCorrect()
+        {
+            if (Letter6.Text != "  ")
+            {
+                if (Letter1.Text == "S" && Letter2.Text == "W" && Letter3.Text == " I" && Letter4.Text == "T" && Letter5.Text == "C" && Letter6.Text == "H")
+                {
+                    Form2 CorrectAnswer = new Form2();
+                    CorrectAnswer.Show();
+                }
+                else
+                {
+                    Form3 WrongAnswer = new Form3();
+                    WrongAnswer.Show();
+                }
+                
+            }
         }
 
         public void LetterIdentify(Label label)
