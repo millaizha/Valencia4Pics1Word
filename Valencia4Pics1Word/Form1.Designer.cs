@@ -308,7 +308,7 @@ namespace Valencia4Pics1Word
             this.flowLayoutPanel3.Controls.Add(this.Letter5);
             this.flowLayoutPanel3.Controls.Add(this.Letter6);
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(41, 429);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(38, 428);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(335, 53);
             this.flowLayoutPanel3.TabIndex = 5;
@@ -341,6 +341,7 @@ namespace Valencia4Pics1Word
             this.Letter2.Size = new System.Drawing.Size(44, 46);
             this.Letter2.TabIndex = 1;
             this.Letter2.Text = "  ";
+            this.Letter2.Click += new System.EventHandler(this.Letter2_Click);
             // 
             // Letter3
             // 
@@ -355,6 +356,7 @@ namespace Valencia4Pics1Word
             this.Letter3.Size = new System.Drawing.Size(44, 46);
             this.Letter3.TabIndex = 2;
             this.Letter3.Text = "  ";
+            this.Letter3.Click += new System.EventHandler(this.Letter3_Click);
             // 
             // Letter4
             // 
@@ -369,6 +371,7 @@ namespace Valencia4Pics1Word
             this.Letter4.Size = new System.Drawing.Size(44, 46);
             this.Letter4.TabIndex = 3;
             this.Letter4.Text = "  ";
+            this.Letter4.Click += new System.EventHandler(this.Letter4_Click);
             // 
             // Letter5
             // 
@@ -383,6 +386,7 @@ namespace Valencia4Pics1Word
             this.Letter5.Size = new System.Drawing.Size(44, 46);
             this.Letter5.TabIndex = 4;
             this.Letter5.Text = "  ";
+            this.Letter5.Click += new System.EventHandler(this.Letter5_Click);
             // 
             // Letter6
             // 
@@ -397,6 +401,7 @@ namespace Valencia4Pics1Word
             this.Letter6.Size = new System.Drawing.Size(44, 46);
             this.Letter6.TabIndex = 5;
             this.Letter6.Text = "  ";
+            this.Letter6.Click += new System.EventHandler(this.Letter6_Click);
             // 
             // Form1
             // 

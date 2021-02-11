@@ -22,41 +22,96 @@ namespace Valencia4Pics1Word
             button.Enabled = false;
             button.BackColor = Color.FromArgb(26, 30, 42);
         }
+        
+        public void LetterLabel(Label label, string letter, Button button)
+        {
+            label.Text = letter;
+            ButtonChosen(button);
+            label.Cursor = System.Windows.Forms.Cursors.Hand;
+        }
 
         public void LetterChoose(string letter, Button button)
         {
             if (Letter1.Text == "  ")
             {
-                Letter1.Text = letter;
-                ButtonChosen(button);
-                Letter1.Cursor = System.Windows.Forms.Cursors.Hand;
+                LetterLabel(Letter1, letter, button);
             }
             else if (Letter2.Text == "  ")
             {
-                Letter2.Text = letter;
-                ButtonChosen(button);
+                LetterLabel(Letter2, letter, button);
             }
             else if (Letter3.Text == "  ")
             {
-                Letter3.Text = letter;
-                ButtonChosen(button);
+                LetterLabel(Letter3, letter, button);
             }
             else if (Letter4.Text == "  ")
             {
-                Letter4.Text = letter;
-                ButtonChosen(button);
+                LetterLabel(Letter4, letter, button);
             }
             else if (Letter5.Text == "  ")
             {
-                Letter5.Text = letter;
-                ButtonChosen(button);
+                LetterLabel(Letter5, letter, button);
             }
             else if (Letter6.Text == "  ")
             {
-                Letter6.Text = letter;
-                ButtonChosen(button);
+                LetterLabel(Letter6, letter, button);
             }
 
+        }
+
+        public void DefaultLetter(Label label, Button button)
+        {
+           label.Text = "  ";
+            button.Enabled = true;
+            button.BackColor = Color.Gainsboro;
+            label.Cursor = System.Windows.Forms.Cursors.Default;
+        }
+
+        public void LetterIdentify(Label label)
+        {
+            if (label.Text != "  ")
+            {
+                if (label.Text == "A")
+                {
+                    DefaultLetter(label, A);
+                }
+                else if (label.Text == " I")
+                {
+                    DefaultLetter(label, I);
+                }
+                else if (label.Text == "P")
+                {
+                    DefaultLetter(label, P);
+                }
+                else if (label.Text == "W")
+                {
+                    DefaultLetter(label, W);
+                }
+                else if (label.Text == "T")
+                {
+                    DefaultLetter(label, T);
+                }
+                else if (label.Text == "H")
+                {
+                    DefaultLetter(label, H);
+                }
+                else if (label.Text == "C")
+                {
+                    DefaultLetter(label, C);
+                }
+                else if (label.Text == "S")
+                {
+                    DefaultLetter(label, S);
+                }
+                else if (label.Text == "L")
+                {
+                    DefaultLetter(label, L);
+                }
+                else if (label.Text == "E")
+                {
+                    DefaultLetter(label, E);
+                }
+            }
         }
 
         private void A_Click(object sender, EventArgs e)
@@ -111,16 +166,32 @@ namespace Valencia4Pics1Word
 
         private void Letter1_Click(object sender, EventArgs e)
         {
-            if (Letter1.Text != "  ")
-            {
-                if (Letter1.Text == "A")
-                {
-                    Letter1.Text = "  ";
-                    A.Enabled = true;
-                    A.BackColor = Color.Gainsboro;
-                    Letter1.Cursor = System.Windows.Forms.Cursors.Default;
-                }
-            }
+            LetterIdentify(Letter1);
+        }
+
+        private void Letter2_Click(object sender, EventArgs e)
+        {
+            LetterIdentify(Letter2);
+        }
+
+        private void Letter3_Click(object sender, EventArgs e)
+        {
+            LetterIdentify(Letter3);
+        }
+
+        private void Letter4_Click(object sender, EventArgs e)
+        {
+            LetterIdentify(Letter4);
+        }
+
+        private void Letter5_Click(object sender, EventArgs e)
+        {
+            LetterIdentify(Letter5);
+        }
+
+        private void Letter6_Click(object sender, EventArgs e)
+        {
+            LetterIdentify(Letter6);
         }
     }
 }
