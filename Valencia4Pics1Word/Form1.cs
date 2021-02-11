@@ -69,7 +69,7 @@ namespace Valencia4Pics1Word
 
         public void AnswerCorrect()
         {
-            if (Letter6.Text != "  ")
+            if (Letter1.Text != "  " && Letter2.Text != "  " && Letter3.Text != "  " && Letter4.Text != "  " && Letter5.Text != "  " && Letter6.Text != "  ")
             {
                 if (Letter1.Text == "S" && Letter2.Text == "W" && Letter3.Text == " I" && Letter4.Text == "T" && Letter5.Text == "C" && Letter6.Text == "H")
                 {
